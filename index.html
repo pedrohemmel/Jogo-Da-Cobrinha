@@ -6,13 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
 </head>
 <body>
     <header class="cabecalho">
-        <h1>Jogo da cobrinha</h1>
+        <img width="120px" height="60px" src="images/logoCobra.png">
+        <div class="jogadas">
+            <p>Tamanho da cobra: </p>
+            <p id="qtdJogadas">0</p>
+        </div>
     </header>
+    <main>
+        <canvas id="snake" class="canvasPag" width="512" height="512"></canvas>
+    </main>
 
-    <canvas id="snake" class="canvasPag" width="512" height="512"></canvas>
+    <section id="gameOver" class="gameOverClass">
+        <div>
+            <h1>Game Over</h1>
+            <p>
+                Clique em "Restart" caso queira jogar novamente 
+                <br> 
+                <i>
+                    Click on "Restart" if you want to play again
+                </i>
+            </p>
+            <a onclick="location.reload()">Restart</a>
+        </div>
+    </section>
+
+    <section class="apenasPC">
+        <div>
+            <h1>Atenção</h1>
+            <p>
+                Utilize um computador para o funcionamento adequado do jogo
+                <br>
+                <i>
+                    Use the computer for the best functioning of the game
+                </i>
+            </p>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

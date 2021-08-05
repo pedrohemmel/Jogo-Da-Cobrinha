@@ -1,0 +1,48 @@
+.apenasPC {
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    color: aqua;
+
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.apenasPC div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:100%;
+    height: 100%;
+
+    text-shadow: 0px 0px 10px aqua;
+}
+
+.apenasPC div p {
+    text-align: center;
+}
+
+@media screen and (max-width: 512px) {
+    .apenasPC {
+        display: block;
+    }
+
+    header {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+    .gameOverClass {
+        display: none;
+    }
+
+}
